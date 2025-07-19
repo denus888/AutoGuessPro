@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вгадай Марку Автомобіля</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">AutoGuessPro</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#how-to-play">Як грати?</a></li>
+                    <li><a href="#about">Про гру</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Розпізнай Елегантність. Вгадай Легенду.</h2>
+                    <p>Перевір свої знання автомобільних брендів. Наскільки добре ти знаєш світ автомобілів?</p>
+                    <button id="startButton" class="btn btn-primary">Почати Гру</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="game-section" class="game-section hidden">
+            <div class="container">
+                <div class="game-card">
+                    <div class="game-image-wrapper">
+                        <img id="carImage" src="https://via.placeholder.com/600x400?text=Завантаження+авто..." alt="Автомобіль для вгадування" class="car-image">
+                    </div>
+                    <div class="game-controls">
+                        <p class="question-text">Що це за марка автомобіля?</p>
+                        <div id="optionsContainer" class="options-grid">
+                            </div>
+                        <p id="feedbackMessage" class="feedback-message"></p>
+                        <button id="nextButton" class="btn btn-secondary hidden">Наступне Авто</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-to-play" class="info-section">
+            <div class="container">
+                <h3>Як грати?</h3>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-icon">1</span>
+                        <h4>Запусти гру</h4>
+                        <p>Натисніть кнопку "Почати Гру", щоб згенерувати перший автомобіль.</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">2</span>
+                        <h4>Розглянь зображення</h4>
+                        <p>Уважно подивіться на фотографію автомобіля, щоб вгадати його марку.</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">3</span>
+                        <h4>Обери варіант</h4>
+                        <p>Виберіть правильну марку серед запропонованих варіантів.</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">4</span>
+                        <h4>Отримай результат</h4>
+                        <p>Дізнайтеся, чи правильна ваша відповідь, і переходьте до наступного авто.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="info-section alternate-bg">
+            <div class="container">
+                <h3>Про гру AutoGuessPro</h3>
+                <p>AutoGuessPro - це захоплююча гра для всіх шанувальників автомобілів. Ми зібрали колекцію високоякісних зображень автомобілів різних марок, щоб ви могли перевірити свої знання та покращити свою ерудицію. Насолоджуйтесь елегантним дизайном та інтуїтивно зрозумілим інтерфейсом, розробленим для максимального задоволення від гри.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 AutoGuessPro. Всі права захищені.</p>
+            <div class="social-links">
+                <a href="#" class="social-icon">F</a>
+                <a href="#" class="social-icon">T</a>
+                <a href="#" class="social-icon">I</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
